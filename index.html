@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Premium web developer portfolio showcasing selected websites, services, and contact details." />
+  <meta name="theme-color" content="#0b0b0c" />
+  <title>Portfolio — Web Developer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%230b0b0c%22/><path d=%22M18 42L31 18h6L24 42h-6Zm20 0-9-12 4-7 13 19h-8Z%22 fill=%22%23f0e8d8%22/></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a href="#top" class="brand" aria-label="Back to top">
+      <span class="brand-mark" id="brandMark">YN</span>
+      <span class="brand-name" id="brandName">YOUR NAME</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="availability" href="#contact"><span></span><span id="availabilityText">Available for select projects</span></a>
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p>Designed to convert attention into action.</p>
+  </div>
+
+  <main id="main">
+    <section class="hero section-shell" aria-labelledby="heroTitle">
+      <div class="hero-kicker reveal">
+        <span>Independent web developer</span>
+        <span class="hero-index">Portfolio / <span id="yearLabel"></span></span>
+      </div>
+
+      <div class="hero-copy">
+        <h1 class="reveal" id="heroTitle">Websites built to <em>look sharp</em> and <em>work harder.</em></h1>
+        <div class="hero-bottom reveal">
+          <p id="heroDescription">I design and develop premium, responsive websites for brands and businesses that want a stronger online presence.</p>
+          <div class="hero-ctas">
+            <a class="button button-primary" href="#work">View selected work <span aria-hidden="true">↘</span></a>
+            <a class="button button-ghost" href="#contact">Start a project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-art reveal" aria-hidden="true">
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-process">
+    <div class="hero-process-step">
+      <small>01</small>
+      <span>BUILD</span>
+    </div>
+
+    <div class="hero-process-line"></div>
+
+    <div class="hero-process-step">
+      <small>02</small>
+      <span>REFINE</span>
+    </div>
+
+    <div class="hero-process-line"></div>
+
+    <div class="hero-process-step">
+      <small>03</small>
+      <span>LAUNCH</span>
+    </div>
+  </div>
+</div>
+
+      <div class="hero-stats reveal" id="heroStats"></div>
+    </section>
+
+    <section class="marquee" aria-label="Capabilities">
+      <div class="marquee-track" id="marqueeTrack"></div>
+    </section>
+
+    <section class="work section-shell" id="work" aria-labelledby="workTitle">
+      <div class="section-heading reveal">
+        <div>
+          <span class="eyebrow">01 / Selected work</span>
+          <h2 id="workTitle">Five builds.<br />One standard.</h2>
+        </div>
+        <p>Each project is presented as a focused case study. Replace the placeholders with your own screenshots and live links in one file.</p>
+      </div>
+
+      <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="services section-shell" id="services" aria-labelledby="servicesTitle">
+      <div class="section-heading reveal">
+        <div>
+          <span class="eyebrow">02 / Services</span>
+          <h2 id="servicesTitle">What I can build<br />for your brand.</h2>
+        </div>
+        <p>Focused services for businesses that need a sharper digital presence without unnecessary complexity.</p>
+      </div>
+
+      <div class="service-list" id="serviceList"></div>
+    </section>
+
+    <section class="about section-shell" id="about" aria-labelledby="aboutTitle">
+      <div class="about-grid">
+        <div class="about-title reveal">
+          <span class="eyebrow">03 / About</span>
+          <h2 id="aboutTitle">Built with intent.<br />Not just decoration.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p class="about-lead" id="aboutLead">I care about the full experience: what people see first, what they understand, where they click, and how the site feels on every screen.</p>
+          <p id="aboutBody">My work combines clean front-end development, responsive design, interaction, and conversion-minded structure to create sites that feel considered from top to bottom.</p>
+          <div class="tech-list" id="techList"></div>
+        </div>
+      </div>
+
+      <div class="principles reveal">
+        <article><span>01</span><h3>Clarity first</h3><p>Visitors should understand the brand and the next action without friction.</p></article>
+        <article><span>02</span><h3>Responsive by default</h3><p>Desktop, tablet, and mobile are treated as one connected experience.</p></article>
+        <article><span>03</span><h3>Polish with purpose</h3><p>Motion and visual detail should support the experience, not distract from it.</p></article>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact" aria-labelledby="contactTitle">
+      <div class="contact-panel reveal">
+        <span class="eyebrow">04 / Contact</span>
+        <h2 id="contactTitle">Have something worth<br /><em>building properly?</em></h2>
+        <p id="contactText">Tell me what you’re building, what needs improving, or what you want to launch.</p>
+        <div class="contact-actions">
+          <a class="button button-light" id="whatsappLink" href="#" target="_blank" rel="noopener noreferrer">Chat on WhatsApp <span aria-hidden="true">↗</span></a>
+          <a class="copy-button contact-secondary" id="gmailLink" href="#" target="_blank" rel="noopener noreferrer">Gmail ↗</a>
+        </div>
+        <div class="contact-meta">
+          <span id="contactEmail">you@example.com</span>
+          <div class="social-links" id="socialLinks"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <p>© <span id="footerYear"></span> <span id="footerName">YOUR NAME</span></p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <dialog class="project-modal" id="projectModal" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close project details">×</button>
+    <div class="modal-media" id="modalMedia"></div>
+    <div class="modal-body">
+      <div class="modal-heading">
+        <div>
+          <span class="eyebrow" id="modalCategory">Project</span>
+          <h2 id="modalTitle">Project title</h2>
+        </div>
+        <span class="modal-number" id="modalNumber">01</span>
+      </div>
+      <p class="modal-summary" id="modalSummary"></p>
+      <div class="modal-columns">
+        <div>
+          <h3>Highlights</h3>
+          <ul id="modalHighlights"></ul>
+        </div>
+        <div>
+          <h3>Built with</h3>
+          <div class="modal-tech" id="modalTech"></div>
+        </div>
+      </div>
+      <div class="modal-actions" id="modalActions"></div>
+    </div>
+  </dialog>
+
+  <script src="portfolio-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
