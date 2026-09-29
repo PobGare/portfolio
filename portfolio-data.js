@@ -1,10 +1,3 @@
-/*
-  ============================================================
-  EDIT THIS FILE TO PERSONALIZE YOUR PORTFOLIO.
-  Everything important is controlled from here.
-  ============================================================
-*/
-
 window.PORTFOLIO_DATA = {
   personal: {
     name: "POBGARE",
