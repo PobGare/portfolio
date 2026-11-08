@@ -116,7 +116,7 @@ I'm continually improving my skills, exploring new technologies, and building pr
 
 I'm open to freelance projects, collaborations, internships, and web development opportunities.
 
-**[Portfolio](https://pobgare.github.io/portfolio/)** · **[LinkedIn](https://www.linkedin.com/in/muhammad-bin-qasim-dev/)** · **[Upwork](https://www.upwork.com/freelancers/~01d4fed98b3719bd6e?mp_source=share)** · **[Fiverr](https://www.fiverr.com/s/2pQ796q)** · **[GitHub](https://github.com/PobGare)**
+**[Portfolio](https://pobgare.github.io/portfolio/)** · **[LinkedIn](https://www.linkedin.com/in/muhammad-bin-qasim-dev/)** · **[Upwork](https://www.upwork.com/freelancers/~01d4fed98b3719bd6e?mp_source=share)** · **[Fiverr](https://www.fiverr.com/pobgarre)** · **[GitHub](https://github.com/PobGare)**
 
 *Building better digital experiences, one project at a time.*
 
