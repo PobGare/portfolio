@@ -17,15 +17,16 @@ window.PORTFOLIO_DATA = {
   },
 
   socials: [
-    { label: "LinkedIn", url: "" },
-    { label: "GitHub", url: "" },
-    { label: "Upwork", url: "" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/muhammad-bin-qasim-dev/" },
+    { label: "GitHub", url: "https://github.com/PobGare" },
+    { label: "Upwork", url: "https://www.upwork.com/freelancers/~01d4fed98b3719bd6e" },
+    { label: "Fiverr", url: "https://www.fiverr.com/pobgarre" },
   ],
 
   stats: [
-    { value: "05", label: "Selected builds" },
+    { value: "06", label: "Selected builds" },
     { value: "100%", label: "Responsive focus" },
-    { value: "$9K", label: "Generated" },
+    { value: "UI", label: "Thoughtful interaction" },
   ],
 
   capabilities: [
@@ -91,6 +92,23 @@ window.PORTFOLIO_DATA = {
 
   projects: [
     {
+      name: "ZIPSTERS",
+      category: "Fashion E-commerce",
+      year: "2026",
+      image: "assets/projects/Zipsters.jpg",
+      alt: "ZIPSTERS live storefront with its T-shirts and mesh campaign",
+      summary:
+        "A menswear storefront demo built around campaign imagery, collection discovery and product browsing. ZIPSTERS brings together an editorial shopping experience, a searchable catalogue and a shopping bag in a responsive interface.",
+      highlights: [
+        "Campaign carousel and dedicated collection pages for menswear",
+        "Product search and shopping bag interactions",
+        "Editorial lookbook with responsive desktop and mobile navigation",
+      ],
+      tech: ["HTML", "CSS", "JavaScript", "Liquid"],
+      liveUrl: "https://zipsters-demo.vercel.app/",
+      githubUrl: "https://github.com/PobGare/zipsters",
+    },
+    {
       name: "IRONFORGE",
 
       category: "Fitness / Performance",
@@ -112,9 +130,9 @@ window.PORTFOLIO_DATA = {
 
       tech: ["HTML", "CSS", "JavaScript", "Canvas API", "WebGL"],
 
-      liveUrl: "",
+      liveUrl: "https://pobgare.github.io/ironforge/",
 
-      githubUrl: "",
+      githubUrl: "https://github.com/PobGare/ironforge",
     },
     {
       name: "LUMÉA",
@@ -138,9 +156,9 @@ window.PORTFOLIO_DATA = {
 
       tech: ["HTML", "CSS", "JavaScript"],
 
-      liveUrl: "",
+      liveUrl: "https://pobgare.github.io/lumea/",
 
-      githubUrl: "",
+      githubUrl: "https://github.com/PobGare/lumea",
     },
     {
       name: "NEXORA",
@@ -164,9 +182,9 @@ window.PORTFOLIO_DATA = {
 
       tech: ["HTML", "CSS", "JavaScript", "LocalStorage"],
 
-      liveUrl: "",
+      liveUrl: "https://pobgare.github.io/nexora/",
 
-      githubUrl: "",
+      githubUrl: "https://github.com/PobGare/nexora",
     },
     {
       name: "ShawtySlayz",
@@ -190,9 +208,9 @@ window.PORTFOLIO_DATA = {
 
       tech: ["Next.js", "React", "TypeScript", "CSS", "Framer Motion", "Lenis"],
 
-      liveUrl: "",
+      liveUrl: "https://shawtyslayz.vercel.app/",
 
-      githubUrl: "",
+      githubUrl: "https://github.com/PobGare/shawtyslayz",
     },
     {
       name: "TechNova",
@@ -216,9 +234,9 @@ window.PORTFOLIO_DATA = {
 
       tech: ["HTML", "CSS", "JavaScript", "Canvas API"],
 
-      liveUrl: "",
+      liveUrl: "https://pobgare.github.io/technova/",
 
-      githubUrl: "",
+      githubUrl: "https://github.com/PobGare/technova",
     },
   ],
 };

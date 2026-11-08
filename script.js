@@ -30,9 +30,9 @@
   }
 
   function initPersonalDetails() {
-    text("#brandMark", personal.brandMark || "YN");
-    text("#brandName", personal.name || "YOUR NAME");
-    text("#footerName", personal.name || "YOUR NAME");
+    text("#brandMark", personal.brandMark || "PG");
+    text("#brandName", personal.name || "POBGARE");
+    text("#footerName", personal.name || "POBGARE");
     text("#availabilityText", personal.availability || "Available for select projects");
     text("#heroDescription", personal.heroDescription || "");
     text("#aboutLead", personal.aboutLead || "");
@@ -203,16 +203,10 @@
 
       if (liveUrl) actions.appendChild(createModalLink("Visit live website ↗", liveUrl, "button button-light"));
       if (githubUrl) actions.appendChild(createModalLink("View code ↗", githubUrl, "button button-outline"));
-
-      if (!liveUrl && !githubUrl) {
-        const note = document.createElement("span");
-        note.className = "modal-placeholder-note";
-        note.textContent = "Add liveUrl or githubUrl in portfolio-data.js to show project links here.";
-        actions.appendChild(note);
-      }
     }
 
     modal.showModal();
+    modal.scrollTop = 0;
     document.body.classList.add("modal-open");
   }
 
@@ -248,6 +242,9 @@
       button.setAttribute("aria-expanded", "false");
       button.setAttribute("aria-label", "Open menu");
       menu.setAttribute("aria-hidden", "true");
+      menu.inert = true;
+      $("main").inert = false;
+      $(".site-footer").inert = false;
       document.body.classList.remove("menu-open");
     };
 
@@ -259,11 +256,35 @@
         button.setAttribute("aria-expanded", "true");
         button.setAttribute("aria-label", "Close menu");
         menu.setAttribute("aria-hidden", "false");
+        menu.inert = false;
+        $("main").inert = true;
+        $(".site-footer").inert = true;
         document.body.classList.add("menu-open");
       }
     });
 
-    $$("a", menu).forEach((link) => link.addEventListener("click", close));
+    $$("a", menu).forEach((link) => link.addEventListener("click", () => {
+      close();
+      const section = $(link.getAttribute("href"));
+      section?.setAttribute("tabindex", "-1");
+      section?.focus({ preventScroll: true });
+    }));
+    $(".brand")?.addEventListener("click", close);
+    document.addEventListener("keydown", (event) => {
+      if (button.getAttribute("aria-expanded") !== "true") return;
+      if (event.key === "Escape") {
+        close();
+        button.focus();
+      } else if (event.key === "Tab") {
+        const controls = [$(".brand"), button, ...$$("a", menu)];
+        const current = controls.indexOf(document.activeElement);
+        event.preventDefault();
+        controls[(current + (event.shiftKey ? controls.length - 1 : 1)) % controls.length].focus();
+      }
+    });
+    window.matchMedia("(min-width: 1081px)").addEventListener("change", (event) => {
+      if (event.matches) close();
+    });
   }
 
   let revealObserver;

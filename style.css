@@ -19,6 +19,7 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
   background: var(--bg);
 }
 body {
@@ -255,6 +256,8 @@ button {
   padding: 130px 24px 36px;
   background: rgba(11, 11, 12, 0.97);
   opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
   pointer-events: none;
   transform: translateY(-10px);
   transition:
@@ -263,6 +266,7 @@ button {
 }
 .menu-open .mobile-menu {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
   transform: none;
 }
@@ -1011,9 +1015,10 @@ button {
   align-items: center;
   margin-top: 44px;
 }
-.modal-placeholder-note {
-  color: var(--muted);
-  font-size: 12px;
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
 }
 
 .reveal {
@@ -1227,6 +1232,22 @@ button {
   .contact-actions .button,
   .copy-button {
     width: 100%;
+  }
+  .contact-panel h2 {
+    font-size: clamp(38px, 10.4vw, 54px);
+    overflow-wrap: anywhere;
+  }
+  .modal-heading h2 {
+    font-size: clamp(30px, 9vw, 46px);
+    overflow-wrap: anywhere;
+  }
+  .hero-process {
+    gap: 10px;
+    padding: 18px;
+  }
+  .hero-process-line {
+    flex-shrink: 1;
+    min-width: 8px;
   }
   .site-footer {
     flex-direction: column;
