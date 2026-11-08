@@ -95,7 +95,7 @@ window.PORTFOLIO_DATA = {
       name: "ZIPSTERS",
       category: "Fashion E-commerce",
       year: "2026",
-      image: "assets/projects/Zipsters.jpg",
+      image: "assets/projects/Zipsters.png",
       alt: "ZIPSTERS live storefront with its T-shirts and mesh campaign",
       summary:
         "A menswear storefront demo built around campaign imagery, collection discovery and product browsing. ZIPSTERS brings together an editorial shopping experience, a searchable catalogue and a shopping bag in a responsive interface.",
