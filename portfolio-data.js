@@ -26,7 +26,7 @@ window.PORTFOLIO_DATA = {
   stats: [
     { value: "06", label: "Selected builds" },
     { value: "100%", label: "Responsive focus" },
-    { value: "UI", label: "Thoughtful interaction" },
+    { value: "$6k", label: "Generated" },
   ],
 
   capabilities: [
