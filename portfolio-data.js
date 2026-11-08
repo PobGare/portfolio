@@ -104,7 +104,7 @@ window.PORTFOLIO_DATA = {
         "Product search and shopping bag interactions",
         "Editorial lookbook with responsive desktop and mobile navigation",
       ],
-      tech: ["HTML", "CSS", "JavaScript", "Liquid"],
+      tech: ["HTML", "CSS", "JavaScript", "Liquid", "React"],
       liveUrl: "https://zipsters-demo.vercel.app/",
       githubUrl: "https://github.com/PobGare/zipsters",
     },
